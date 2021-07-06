@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jungle Book</title>
+	<link rel="stylesheet" type="text/css" href="quiz1.css">
+	<link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+	<section class="back">
+		<a href="index.html"><img src="logo.png" class="logo"></a>
+		<div class="main">
+			<p class="qs"><span class="theqs">Question 1:</span> &nbsp &nbsp What is the name of this animal standing <span class="below">in the right side?</span></p>
+			<button class="a" id="a"><p>A.</p> Lion</button>
+			<button class="b" id="b"><p>B.</p> Crocodile</button>
+			<button class="c" id="c"><p>C.</p> Tiger</button>
+			<button class="d" id="d"><p>D.</p> Rabbit</button>
+			<a href="quiz2.html" class="next" id="next">Next</a>
+			<img class="img" src="Crocodile.png">
+		</div>
+	</section>
+
+	<script>
+		let ButtonA=document.querySelector('#a');
+		let ButtonB=document.querySelector('#b');
+		let ButtonC=document.querySelector('#c');
+		let ButtonD=document.querySelector('#d');
+		var next=document.getElementById("next");
+		var A=document.getElementById("a");
+		var B=document.getElementById("b");
+		var C=document.getElementById("c");
+		var D=document.getElementById("d");
+		var check=true;
+		ButtonA.addEventListener('click', ()=>
+		{
+			if(check)
+			{
+				a.style.backgroundColor="red";
+				a.style.borderColor="red";
+				b.style.backgroundColor="green";
+				b.style.borderColor="green";
+
+				c.style.backgroundColor="transparent";
+				c.style.borderColor="#fff";
+				d.style.backgroundColor="transparent";
+				d.style.borderColor="#fff";
+				check=false;
+				next.style.display="inline";
+			}
+		})
+		ButtonB.addEventListener('click', ()=>
+		{
+			if(check)
+			{
+				b.style.backgroundColor="green";
+				b.style.borderColor="green";
+
+				a.style.backgroundColor="transparent";
+				a.style.borderColor="#fff";
+				c.style.backgroundColor="transparent";
+				c.style.borderColor="#fff";
+				d.style.backgroundColor="transparent";
+				d.style.borderColor="#fff";
+				check=false;
+				next.style.display="inline";
+			}
+		})
+		ButtonC.addEventListener('click', ()=>
+		{
+			if(check)
+			{
+				c.style.backgroundColor="red";
+				c.style.borderColor="red";
+				b.style.backgroundColor="green";
+				b.style.borderColor="green";
+
+				a.style.backgroundColor="transparent";
+				a.style.borderColor="#fff";
+				d.style.backgroundColor="transparent";
+				d.style.borderColor="#fff";
+				check=false;
+				next.style.display="inline";
+			}
+		})
+		ButtonD.addEventListener('click', ()=>
+		{
+			if(check)
+			{
+				d.style.backgroundColor="red";
+				d.style.borderColor="red";
+				b.style.backgroundColor="green";
+				b.style.borderColor="green";
+
+				a.style.backgroundColor="transparent";
+				a.style.borderColor="#fff";
+				c.style.backgroundColor="transparent";
+				c.style.borderColor="#fff";
+				check=false;
+				next.style.display="inline";
+			}
+		})
+	</script>
+</body>
+</html>

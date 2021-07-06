@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animals</title>
+	<link rel="stylesheet" type="text/css" href="animal.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+	<section class="back">
+		<a href="index.html">
+			<img src="logo.png" class="logo">
+		</a>
+		<a href="animal2.html"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+
+		<button class="	tiger-head" id="tiger-head" title="Tiger"><img src="tiger-head.png"></button>
+		<button class="	lion-head" id="lion-head" title="Lion"><img src="lion-head.png"></button>
+		<button class="	monkey-head" id="monkey-head" title="Monkey"><img src="monkey-head.png"></button>
+		<button class="	fox-head" id="fox-head" title="Fox"><img src="fox-head.png"></button>
+		<button class="horse-head" id="horse-head" title="Horse"><img src="horse-head.png"></button>
+		<button class="panda-head" id="panda-head" title="Panda"><img src="panda-head.png"></button>
+		<button class="cat-head" id="cat-head" title="Cat"><img src="cat-head.svg"></button>
+		<button class="dog-head" id="dog-head" title="Dog"><img src="dog-head.png"></button>
+		<button class="cow-head" id="cow-head" title="Cow"><img src="cow-head.png"></button>
+		<button class="gorilla-head" id="gorilla-head" title="Gorilla"><img src="gorilla-head.png"></button>
+
+		<!----Box---->
+		<div class="box" id="box">
+			<div class="box-pic">	
+				<button id="playSound"><img src="" id="boximg"></button>
+				<i class="fa fa-times" id="fa" aria-hidden="true" onclick="closeBox()"></i>
+			</div>
+			<div class="box-text">
+				<p id="box-text"></p>
+			</div>
+		</div>
+	</section>
+
+<!----JavaScript------>
+<script>
+	var i=true,j=false;
+	var box=document.getElementById("box");
+	var text=document.getElementById("box-text");
+	var close=document.getElementById("fa");
+	var text=document.getElementById("box-text");
+	
+	let tigerButton=document.querySelector('#tiger-head');
+	let lionButton=document.querySelector('#lion-head');
+	let monkeyButton=document.querySelector('#monkey-head');
+	let foxButton=document.querySelector('#fox-head');
+	let horseButton=document.querySelector('#horse-head');
+	let pandaButton=document.querySelector('#panda-head');
+	let catButton=document.querySelector('#cat-head');
+	let dogButton=document.querySelector('#dog-head');
+	let gorillaButton=document.querySelector('#gorilla-head');
+	let cowButton=document.querySelector('#cow-head');
+	let img=document.querySelector('#boximg');
+	let play=document.querySelector('#playSound');
+	function closeBox()
+	{
+		box.style.width="0px";
+		text.style.fontSize="0px";
+		close.style.fontSize="0px";
+		box.style.border="0px solid black";
+		box.style.borderWidth="0px";
+	}
+	tigerButton.addEventListener('click', ()=>
+	{
+		box.style.width="400px";
+		text.style.fontSize="20px";
+		close.style.fontSize="20px";
+		box.style.border="1px solid black";
+		box.style.borderWidth="8px";
+		box.style.borderStyle="double";
+
+		img.src="tiger.png";
+		img.style.width="75%";
+		img.style.top="50%";
+		text.innerHTML="TIGER = বাঘ";
+	})
+	lionButton.addEventListener('click', ()=>
+	{
+		box.style.width="400px";
+		text.style.fontSize="20px";
+		close.style.fontSize="20px";
+		box.style.border="1px solid black";
+		box.style.borderWidth="8px";
+		box.style.borderStyle="double";
+
+		img.src="lion.png";
+		img.style.width="100%";
+		img.style.top="50%";
+		text.innerHTML="LION = সিংহ";
+	})
+	monkeyButton.addEventListener('click', ()=>
+	{
+		box.style.width="400px";
+		text.style.fontSize="20px";
+		close.style.fontSize="20px";
+		box.style.border="1px solid black";
+		box.style.borderWidth="8px";
+		box.style.borderStyle="double";
+
+		img.src="monkey.png";
+		img.style.width="80%";
+		img.style.top="40%";
+		text.innerHTML="MONKEY = বানর";
+	})
+	foxButton.addEventListener('click', ()=>
+	{
+		box.style.width="400px";
+		text.style.fontSize="20px";
+		close.style.fontSize="20px";
+		box.style.border="1px solid black";
+		box.style.borderWidth="8px";
+		box.style.borderStyle="double";
+
+		img.src="fox.png";
+		img.style.width="90%";
+		img.style.top="50%";
+		text.innerHTML="FOX = শিয়াল";
+	})
+	horseButton.addEventListener('click', ()=>
+	{
+		box.style.width="400px";
+		text.style.fontSize="20px";
+		close.style.fontSize="20px";
+		box.style.border="1px solid black";
+		box.style.borderWidth="8px";
+		box.style.borderStyle="double";
+
+		img.src="horse.png";
+		img.style.width="60%";
+		img.style.top="50%";
+		text.innerHTML="HORSE = ঘোড়া";
+	})
+	pandaButton.addEventListener('click', ()=>
+	{
+		box.style.width="400px";
+		text.style.fontSize="20px";
+		close.style.fontSize="20px";
+		box.style.border="1px solid black";
+		box.style.borderWidth="8px";
+		box.style.borderStyle="double";
+
+		img.src="panda.png";
+		img.style.width="60%";
+		img.style.top="50%";
+		boxSound.src="pandaSound.mp3";
+		text.innerHTML="PANDA = পান্ডা";
+	})
+	catButton.addEventListener('click', ()=>
+	{
+		box.style.width="400px";
+		text.style.fontSize="20px";
+		close.style.fontSize="20px";
+		box.style.border="1px solid black";
+		box.style.borderWidth="8px";
+		box.style.borderStyle="double";
+
+		img.src="cat.png";
+		img.style.width="60%";
+		img.style.top="50%";
+		text.innerHTML="CAT = বিড়াল";
+	})
+	dogButton.addEventListener('click', ()=>
+	{
+		box.style.width="400px";
+		text.style.fontSize="20px";
+		close.style.fontSize="20px";
+		box.style.border="1px solid black";
+		box.style.borderWidth="8px";
+		box.style.borderStyle="double";
+
+		img.src="dog.png";
+		img.style.width="70%";
+		img.style.top="50%";
+		text.innerHTML="DOG = কুকুর";
+	})
+	gorillaButton.addEventListener('click', ()=>
+	{
+		box.style.width="400px";
+		text.style.fontSize="20px";
+		close.style.fontSize="20px";
+		box.style.border="1px solid black";
+		box.style.borderWidth="8px";
+		box.style.borderStyle="double";
+
+		img.src="gorilla.png";
+		img.style.width="70%";
+		img.style.top="50%";
+		text.innerHTML="GORILLA = গরিলা";
+	})
+	cowButton.addEventListener('click', ()=>
+	{
+		box.style.width="400px";
+		text.style.fontSize="20px";
+		close.style.fontSize="20px";
+		box.style.border="1px solid black";
+		box.style.borderWidth="8px";
+		box.style.borderStyle="double";
+
+		img.src="cow.png";
+		img.style.width="70%";
+		img.style.top="50%";
+		text.innerHTML="COW = গরু";
+	})
+</script>
+</body>
+</html>
